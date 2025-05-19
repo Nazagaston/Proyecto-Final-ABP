@@ -10,6 +10,7 @@ from automatizacion import (
     listar_automatizaciones,
     eliminar_automatizacion,
     ejecutar_automatizacion
+    
 )
 
 
@@ -19,8 +20,8 @@ def mostrar_menu():
     print("2. Listar dispositivos")
     print("3. Buscar dispositivo")
     print("4. Eliminar dispositivo")
-    print("5. Ejecutar automatización (Encender todos a las 7:00 AM)")
-    print("6. Crear automatización")
+    print("5. Crear automatización")
+    print("6. Ejecutar automatización")
     print("7. Listar automatizaciones")
     print("8. Eliminar automatización")
     print("0. Salir")
@@ -39,9 +40,9 @@ def main():
         elif opcion == '4':
             eliminar_dispositivo()
         elif opcion == '5':
-            ejecutar_automatizacion()    
+            crear_automatizacion()    
         elif opcion == '6':
-            crear_automatizacion()
+            ejecutar_automatizacion()
         elif opcion == '7':
             listar_automatizaciones()
         elif opcion == '8':

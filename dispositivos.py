@@ -1,4 +1,4 @@
-dispositivos = []
+from datos import dispositivos, automatizaciones
 
 def agregar_dispositivo():
     nombre = input("Nombre del dispositivo: ")
@@ -17,10 +17,15 @@ def agregar_dispositivo():
        tipo = "television"
     elif opcion == '4':
         tipo = "luces_sincronizadas"
+    else:
+        print ("El tipo de dispositivo no esta dentro de los permitidos")
+        return
+    
     marca= input("Marca:")
     estado= input("Estado (Encendido/Apagado):")
 
     dispositivo = {
+        "id": len(dispositivos) + 1,
         "nombre": nombre,
         "tipo": tipo,
         "estado": estado,
@@ -68,3 +73,5 @@ def eliminar_dispositivo():
             print("Dispositivo eliminado.")
             return
     print("No se encontró el dispositivo.")
+
+    __all__ = ["dispositivos", "agregar_dispositivo", "listar_dispositivos", "buscar_dispositivo", "eliminar_dispositivo"]
