@@ -5,7 +5,13 @@ from dispositivos import (
     buscar_dispositivo,
     eliminar_dispositivo
 )
-from automatizacion import ejecutar_automatizacion
+from automatizacion import (
+    crear_automatizacion,
+    listar_automatizaciones,
+    eliminar_automatizacion,
+    ejecutar_automatizacion
+)
+
 
 def mostrar_menu():
     print("\n--- Menú SmartHome ---")
@@ -14,6 +20,9 @@ def mostrar_menu():
     print("3. Buscar dispositivo")
     print("4. Eliminar dispositivo")
     print("5. Ejecutar automatización (Encender todos a las 7:00 AM)")
+    print("6. Crear automatización")
+    print("7. Listar automatizaciones")
+    print("8. Eliminar automatización")
     print("0. Salir")
 
 def main():
@@ -30,7 +39,13 @@ def main():
         elif opcion == '4':
             eliminar_dispositivo()
         elif opcion == '5':
-            ejecutar_automatizacion()
+            ejecutar_automatizacion()    
+        elif opcion == '6':
+            crear_automatizacion()
+        elif opcion == '7':
+            listar_automatizaciones()
+        elif opcion == '8':
+            eliminar_automatizacion()
         elif opcion == '0':
             print("Gracias por usar SmartHome. ¡Hasta luego!")
             break
