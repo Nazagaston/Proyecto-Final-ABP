@@ -3,22 +3,22 @@ from datos import dispositivos, automatizaciones
 
 
 def crear_automatizacion():
-    nombre = input("Nombre de la automatización: ")
-    hora = input("Hora programada (formato HH:MM): ")
-    accion = input("Acción (por ahora: 'encender todos'): ")
+    nombre_automatizacion = input("Nombre de la automatización: ")
+    hora_programada = input("Hora programada (formato HH:MM): ")
+    accion_solicitada = input("Acción (por ahora: 'encender todos'): ")
 
-    if accion != "encender todos":
+    if accion_solicitada != "encender todos":
         print("Por ahora solo se permite la acción: 'encender todos'")
         return
 
-    nueva = {
+    nueva_automatizacion = {
         "id": len(automatizaciones) + 1,
-        "nombre": nombre,
-        "hora": hora,
-        "accion": accion
+        "nombre": nombre_automatizacion,
+        "hora": hora_programada,
+        "accion": accion_solicitada
     }
 
-    automatizaciones.append(nueva)
+    automatizaciones.append(nueva_automatizacion)
     print("Automatización creada con éxito.")
 
 def listar_automatizaciones():

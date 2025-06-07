@@ -1,50 +1,66 @@
 from datos import dispositivos, automatizaciones
 
 def agregar_dispositivo():
-    nombre = input("Nombre del dispositivo: ")
-    print("\nTipo de dispositivo")
-    print("1. Consola de juego")
-    print("2. Equipo de sonido")
-    print("3. Television")
-    print("4. Luces Sincronizadas")
-    opcion = input("Seleccione una opción:")
+    nombre_dispositivo = input("Nombre del dispositivo: ")
 
-    if opcion == '1':
-        tipo = "consola_de_juego"
-    elif opcion == '2':
-        tipo = "equipo_de_sonido"
-    elif opcion == '3':
-       tipo = "television"
-    elif opcion == '4':
-        tipo = "luces_sincronizadas"
-    else:
-        print ("El tipo de dispositivo no esta dentro de los permitidos")
-        return
-    
-    marca= input("Marca:")
-    estado= input("Estado (Encendido/Apagado):")
+    while True:
+        print("\nTipo de dispositivo")
+        print("1. Consola de juego")
+        print("2. Equipo de sonido")
+        print("3. Televisión")
+        print("4. Luces Sincronizadas")
+        opcion_tipo_dispositivo = input("Seleccione una opción: ")
 
-    dispositivo = {
+        if opcion_tipo_dispositivo == '1':
+            tipo_dispositivo = "consola_de_juego"
+            break
+        elif opcion_tipo_dispositivo == '2':
+            tipo_dispositivo = "equipo_de_sonido"
+            break
+        elif opcion_tipo_dispositivo == '3':
+            tipo_dispositivo = "television"
+            break
+        elif opcion_tipo_dispositivo == '4':
+            tipo_dispositivo = "luces_sincronizadas"
+            break
+        else:
+            print("Opción inválida. Intentá nuevamente.")
+
+    marca_dispositivo = input("Marca: ")
+
+    # Validación del estado del dispositivo
+    while True:
+        estado_dispositivo = input("Estado (Encendido/Apagado): ")
+        if estado_dispositivo.lower() == "encendido":
+            estado_dispositivo = "Encendido"
+            break
+        elif estado_dispositivo.lower() == "apagado":
+            estado_dispositivo = "Apagado"
+            break
+        else:
+            print("Estado inválido. Solo se permite 'Encendido' o 'Apagado'.")
+
+    nuevo_dispositivo = {
         "id": len(dispositivos) + 1,
-        "nombre": nombre,
-        "tipo": tipo,
-        "estado": estado,
-        "marca": marca,
+        "nombre": nombre_dispositivo,
+        "tipo": tipo_dispositivo,
+        "estado": estado_dispositivo,
+        "marca": marca_dispositivo
     }
 
-    # Campos específicos por tipo
-    if tipo == "luces_sincronizadas":
-        color = input("Color de la luz: ")
-        dispositivo["color"] = color
-    elif tipo == "equipo_de_sonido":
-        potencia = input("Potencia (W): ")
-        dispositivo["potencia"] = potencia
-    elif tipo == "television":
-        tamaño = input("Tamaño (pulgadas): ")
-        dispositivo["tamaño"] = tamaño
-   
-    dispositivos.append(dispositivo)
-    print(f"Dispositivo '{nombre}' agregado.")
+  
+    if tipo_dispositivo == "luces_sincronizadas":
+        color_luz = input("Color de la luz: ")
+        nuevo_dispositivo["color"] = color_luz
+    elif tipo_dispositivo == "equipo_de_sonido":
+        potencia_sonido = input("Potencia (W): ")
+        nuevo_dispositivo["potencia"] = potencia_sonido
+    elif tipo_dispositivo == "television":
+        tamaño_pantalla = input("Tamaño (pulgadas): ")
+        nuevo_dispositivo["tamaño"] = tamaño_pantalla
+
+    dispositivos.append(nuevo_dispositivo)
+    print(f"Dispositivo '{nombre_dispositivo}' agregado correctamente.")
 
 def listar_dispositivos():
     if not dispositivos:
