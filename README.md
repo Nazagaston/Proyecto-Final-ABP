@@ -15,7 +15,8 @@ A partir de la **Evidencia 3**, se incorporan funciones adicionales como:
 - Gestión avanzada de usuarios y dispositivos.
 
 El desarrollo está realizado en **Python** y aborda conceptos como:
- -Estructuras de datos, listas, diccionarios
+
+-Estructuras de datos, listas, diccionarios
 - Modularización de código
 - Validaciones de entrada
 - Menús interactivos por consola
