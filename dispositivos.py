@@ -9,6 +9,7 @@ def agregar_dispositivo():
         print("2. Equipo de sonido")
         print("3. Televisión")
         print("4. Luces Sincronizadas")
+        print("5. computadora")
         opcion_tipo_dispositivo = input("Seleccione una opción: ")
 
         if opcion_tipo_dispositivo == '1':
@@ -23,6 +24,8 @@ def agregar_dispositivo():
         elif opcion_tipo_dispositivo == '4':
             tipo_dispositivo = "luces_sincronizadas"
             break
+        elif opcion_tipo_dispositivo == '5'
+            tipo_dispositivo = "computadora"
         else:
             print("Opción inválida. Intentá nuevamente.")
 
