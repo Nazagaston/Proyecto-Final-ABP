@@ -24,7 +24,7 @@ def agregar_dispositivo():
         elif opcion_tipo_dispositivo == '4':
             tipo_dispositivo = "luces_sincronizadas"
             break
-        elif opcion_tipo_dispositivo == '5'
+        elif opcion_tipo_dispositivo == '5':
             tipo_dispositivo = "computadora"
         else:
             print("Opción inválida. Intentá nuevamente.")
