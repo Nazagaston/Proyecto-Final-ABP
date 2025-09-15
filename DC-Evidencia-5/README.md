@@ -1,4 +1,4 @@
-![Image](https://github.com/user-attachments/assets/63c62ed2-53dc-4dbb-9175-497dce5313e9)
+![Image](https://github.com/user-attachments/assets/6861acb6-dceb-498f-91a2-93a19ebd56d7)
 
 # Justificación del diagrama de clases
 
@@ -39,3 +39,4 @@ Esta asociación indica que:
 - Una *Automatización* puede estar vinculada a múltiples dispositivos.  
 
 De esta forma, comparten atributos y métodos en el desarrollo de dicha funcionalidad.
+
