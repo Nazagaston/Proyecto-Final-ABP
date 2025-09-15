@@ -1,5 +1,5 @@
 import pytest  
-from src.models.automatizacion import Automatizacion
+from src.automatizacion import Automatizacion
 
 def test_agregar_automatizacion():
     automatizacion = Automatizacion(1, "Encender Manana", "06:00", "encender todos", None)

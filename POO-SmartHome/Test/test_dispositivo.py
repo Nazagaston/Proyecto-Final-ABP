@@ -1,7 +1,7 @@
 import pytest
-from src.models.dispositivo import Dispositivo
-from src.models.television import Television
-from src.models.luces_sincronizadas import LucesSincronizadas
+from src.dispositivo import Dispositivo
+from src.television import Television
+from src.luces_sincronizadas import LucesSincronizadas
 
 def test_crear_Television():
     dispositivo = Television(0,"TV salon","Television", "Samsung","apagado",1, None, "40 pulgadas")

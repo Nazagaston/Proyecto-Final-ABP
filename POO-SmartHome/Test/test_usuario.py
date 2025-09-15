@@ -1,5 +1,5 @@
 import pytest   
-from src.models.usuario import Usuario
+from src.usuario import Usuario
 
 def test_registrar_usuario():
     usuario = Usuario(1, "Nazarena", "nazarena@gmail.com", "1999", "admin")
