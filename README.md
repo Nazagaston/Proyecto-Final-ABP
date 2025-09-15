@@ -1,7 +1,7 @@
 
-# Evidencia de Aprendizaje N°2 y N°3 - Programación I
+#Proyecto Final ABP
 
-Este repositorio contiene el desarrollo correspondiente a las **Evidencias de Aprendizaje N°2 y N°3** de la materia **Programación I**, perteneciente al trayecto formativo del **Módulo Programador**.
+Este repositorio contiene el desarrollo correspondiente a evidencias de aprendizaje pertenecientes al trayecto formativo del **Módulo Programador**.
 
 ## Descripción del trabajo
 
@@ -14,6 +14,7 @@ A partir de la **Evidencia 3**, se incorporan funciones adicionales como:
 - Automatización predefinida ejecutada según el reloj del sistema.
 - Gestión avanzada de usuarios y dispositivos.
 
+
 El desarrollo está realizado en **Python** y aborda conceptos como:
 
 -Estructuras de datos, listas, diccionarios
@@ -23,11 +24,12 @@ El desarrollo está realizado en **Python** y aborda conceptos como:
 - Automatización básica por horario del sistema
 - Roles y permisos diferenciados
 
+  Se agrega un nuevo enfoque en Evidencia 5 con el objetivo de incorporar una implementacion con Programacion Orientada a Objetos. 
+
 ## Integrantes del grupo
 
 - **Lucas Mariano González** -  
 - **Lucía Nazarena Gastón** - 
-- **Verónica Marisa Moreno** -
 
 
 
