@@ -1,8 +1,8 @@
 from .dispositivo import Dispositivo
 
 class EquipoDeSonido(Dispositivo):
-    def __init__(self, nombre, tipo, marca, estado, idUsuario, automatizaciones, potencia):
-        super().__init__(nombre, tipo, marca, estado, idUsuario, automatizaciones)
+    def __init__(self, id,nombre, tipo, marca, estado, idUsuario, automatizaciones, potencia):
+        super().__init__(id,nombre, tipo, marca, estado, idUsuario, automatizaciones)
         self.potencia = potencia
         self.volumen = 10
 
