@@ -1,3 +1,5 @@
+![Image](https://github.com/user-attachments/assets/c6921a97-8d4e-4a05-8110-877c260223bd) 
+
 # Versión corregida del modelo relacional
 
 En la versión corregida del modelo relacional se ajustaron las entidades y relaciones para que sean consistentes con el DER.  
