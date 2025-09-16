@@ -46,5 +46,10 @@ INSERT INTO Consumo (fecha_hora, valor_kwh, id_dispositivo) VALUES
 (NOW(), 0.25, 8),
 (NOW(), 0.80, 9),
 (NOW(), 0.30, 10);
-SELECT * FROM Dispositivo ;
-sELECT * FROM Usuario
+SELECT * FROM Rol;
+SELECT * FROM Usuario;
+SELECT * FROM Dispositivo;
+SELECT * FROM Automatizacion;
+SELECT * FROM Escenario;
+SELECT * FROM Escenario_Dispositivo;
+SELECT * FROM Consumo;
